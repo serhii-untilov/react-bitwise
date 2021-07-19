@@ -8,7 +8,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <BitNumber caption-text="Number 1"/>
+        <br/>
+        <BitNumber caption="Number 1" />
+        <br/>
+        <BitNumber caption="Number 2" />
+        <br/>
+        <BitNumber caption="Result" />
+        <br/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

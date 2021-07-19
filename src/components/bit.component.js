@@ -1,8 +1,8 @@
 import { useState } from "react"
 
-function BitNumber(params) {
-    const [bitNumber, setBitNumber] = useState(11)
-    const [caption, setCaption] = useState(params['captionText'])
+function BitNumber(props) {
+    const [bitNumber, setBitNumber] = useState(0)
+    const caption = props.caption
 
     return (
         <div>
@@ -42,7 +42,7 @@ function BitNumber(params) {
                 <th>&nbsp;0&nbsp;</th>
             </tr>
             <tr>
-                <td><input type="text"/></td>
+                <td><input type="text" value={bitNumber} onInput={(e) => {setBitNumber(e.target.value)}} /></td>
                 <td>{bitNumber & 0x80000000 ? 1 : 0}</td>
                 <td>{bitNumber & 0x40000000 ? 1 : 0}</td>
                 <td>{bitNumber & 0x20000000 ? 1 : 0}</td>
