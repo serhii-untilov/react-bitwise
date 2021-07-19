@@ -14,4 +14,22 @@ code {
 
 input {
   font-size: 24px;
+  border-radius: 4px;
+}
+
+button {
+  font-size: 24px;
+  border-radius: 4px;
+  border-color: #ffffff;
+  border-style: solid;
+}
+
+.bit-on {
+  color: white;
+  background-color: #1D8348;
+}
+
+.bit-off {
+  color: #F2F4F4;
+  background-color: grey;
 }

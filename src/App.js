@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import './components/bit.component'
-import BitNumber from './components/bit.component';
+import './components/BitNumber.component'
+import BitNumber from './components/BitNumber.component';
 
 function App() {
   return (
