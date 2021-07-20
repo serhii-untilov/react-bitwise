@@ -12,24 +12,60 @@ code {
     monospace;
 }
 
-input {
-  font-size: 24px;
-  border-radius: 4px;
+.row {
+  width: 100%;
+  margin: 0 auto;
 }
 
-button {
+.left {
+  width: 30%;
+  float: left;
+  align-items: left;
+  text-align: left;
+}
+
+.right {
+  width: 30%;
+  float: right;
+  align-items: right;
+  text-align: right;
+}
+
+.bit-name {
+  text-align: left;
+  align-items: left;
+}
+
+.bit-header {
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+}
+
+.bit-input {
   font-size: 24px;
   border-radius: 4px;
-  border-color: #ffffff;
-  border-style: solid;
+  text-align: right;
 }
 
 .bit-on {
+  font-size: 24px;
+  text-align: center;
+  border-radius: 4px;
+  border-color: #ffffff;
+  border-style: solid;
   color: white;
   background-color: #1D8348;
+  width: 40px;
 }
 
 .bit-off {
+  font-size: 24px;
+  text-align: center;
+  border-radius: 4px;
+  border-color: #ffffff;
+  border-style: solid;
   color: #F2F4F4;
   background-color: grey;
+  width: 40px;
 }
