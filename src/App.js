@@ -17,7 +17,7 @@ function App() {
         <br/>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://reactjs.org/docs/handling-events.html"
           target="_blank"
           rel="noopener noreferrer"
         >
