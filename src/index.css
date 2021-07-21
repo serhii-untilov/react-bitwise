@@ -47,47 +47,53 @@ code {
 }
 
 .bit-input {
-  font-size: 24px;
-  border-radius: 4px;
-  text-align: right;
-  width: 240px;
-}
-
-.bit-button {
-  margin: 2px;
-  font-size: 12px;
+  font-size: 18px;
   text-align: center;
   border-radius: 4px;
-  border-color: #ffffff;
+  border-color: #5DADE2;
+  border-style: solid;
+  color:  #1B4F72; 
+  background-color: #F2F4F4;
+  width: 160px;
+  height: 32px;
+}
+
+.operation {
+  margin-right: 8px;
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  text-align: center;
+  border-radius: 4px;
+  border-color: #5DADE2;
+  border-style: solid;
+  color: #F2F4F4; 
+  background-color: #1B4F72;
+  width: 80px;
+  height: 32px;
+}
+.bit-button {
+  margin: 1px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  border-color: #48C9B0;
   border-style: solid;
   width: 32px;
-  height: 60px;
+  height: 32px;
 }
 
 .bit-on {
   color: white;
-  background-color: #1D8348;
+  background-color: #117A65;
 }
 
 .bit-off {
   color: #F2F4F4;
-  background-color: grey;
+  background-color: #282c34;
 }
 
 .bit-space {
   width: 8px;
 }
 
-.operation {
-  margin-right: 8px;
-  margin-bottom: 8px;
-
-  font-size: 24px;
-  text-align: center;
-  /* border-radius: 4px; */
-  /* border-color: #ffffff; */
-  /* border-style: solid; */
-  /* color: #F2F4F4; */
-  /* background-color: grey; */
-  width: 120px;
-}

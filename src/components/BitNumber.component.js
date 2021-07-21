@@ -1,27 +1,48 @@
 import { useState } from "react"
 import BitButton from "./BitButton.component"
 
+function useStack(init) {
+    
+}
+
 function BitNumber(props) {
-    const [bitNumber, setBitNumber] = useState(0)
     const caption = props.caption
+    const [bitNumber, setBitNumber] = useState(0)
+    const [stack, setStack] = useState([bitNumber])
 
     function setBit(mask) {
+        store()
         setBitNumber((bitNumber & mask) ? (bitNumber & (~mask)) : (bitNumber | mask))
     }
 
     function shiftLeft() {
+        store()
         setBitNumber(bitNumber << 1)
     }
 
     function shiftRight() {
+        store()
         setBitNumber(bitNumber >> 1)
     }
+
     function inverse() {
+        store()
         setBitNumber(~bitNumber)
     }
 
     function clear() {
+        store()
         setBitNumber(0)
+    }
+
+    function store() {
+        stack.push(bitNumber)
+        setStack(stack)
+    }
+
+    function restore() {
+        setBitNumber(stack.pop() || 0)
+        setStack(stack)
     }
 
     return (
@@ -30,11 +51,13 @@ function BitNumber(props) {
                 <div class="bit-header">{caption}</div>
             </div>
             <div class="row">
-                <div class="left"><button class="operation" onClick={(e) => { inverse() }}>Inverse</button></div>
-                <div class="left"><button class="operation" onClick={(e) => {clear()}}>Clear</button></div>
-                <div class="left"><button class="operation" onClick={(e) => {shiftLeft()}}>&lt;&lt;</button></div>
-                <div class="left"><button class="operation" onClick={(e) => {shiftRight() }}>&gt;&gt;</button></div>
-                <div class="right"><input class="bit-input" type="text" value={bitNumber} onInput={(e) => { setBitNumber(e.target.value) }} /></div>
+                <div class="left"><input class="bit-input" type="text" value={bitNumber} onInput={(e) => { setBitNumber(e.target.value) }} /></div>
+                <div class="right"><button class="operation" onClick={(e) => { inverse() }}>Inverse</button></div>
+                <div class="right"><button class="operation" onClick={(e) => { clear() }}>Clear</button></div>
+                <div class="right"><button class="operation" onClick={(e) => { shiftLeft() }}>&lt;&lt;</button></div>
+                <div class="right"><button class="operation" onClick={(e) => { shiftRight() }}>&gt;&gt;</button></div>
+                <div class="right"><button class="operation" onClick={(e) => { restore() }}>Restore</button></div>
+
             </div>
             <div>
                 <tr>
