@@ -1,8 +1,9 @@
-import { useState } from "react"
-
 function BitButton(props) {
-    const [state, setState] = useState(props.state)
-    return <button class={state ? 'bit-on' : 'bit-off' } onClick={e => {setState(!state)}}>{state ? 1 : 0}</button>
+    return <button
+        class={props.state ? 'bit-button bit-on' : 'bit-button bit-off'}
+        onClick={props.onClick}>
+        {props.name}
+    </button>
 }
 
 export default BitButton
