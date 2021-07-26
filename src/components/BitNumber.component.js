@@ -1,10 +1,6 @@
 import { useState } from "react"
 import BitButton from "./BitButton.component"
 
-function useStack(init) {
-    
-}
-
 function BitNumber(props) {
     const caption = props.caption
     const [bitNumber, setBitNumber] = useState(0)
