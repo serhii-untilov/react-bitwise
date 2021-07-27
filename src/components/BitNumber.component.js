@@ -42,17 +42,19 @@ function BitNumber(props) {
     }
 
     return (
-        <div>
-            <div class="row">
-                <div class="bit-header">{caption}</div>
-            </div>
-            <div class="row">
-                <div class="left"><input class="bit-input" type="text" value={bitNumber} onInput={(e) => { setBitNumber(e.target.value) }} /></div>
-                <div class="right"><button class="operation" onClick={(e) => { inverse() }}>Inverse</button></div>
-                <div class="right"><button class="operation" onClick={(e) => { clear() }}>Clear</button></div>
-                <div class="right"><button class="operation" onClick={(e) => { shiftLeft() }}>&lt;&lt;</button></div>
-                <div class="right"><button class="operation" onClick={(e) => { shiftRight() }}>&gt;&gt;</button></div>
-                <div class="right"><button class="operation" onClick={(e) => { restore() }}>Restore</button></div>
+        <div className="column">
+            <div className="row">
+                <div className="row--align-left">
+                    <div className="bit-number__caption">{caption}</div>
+                    <input className="bit-number__input" type="text" value={bitNumber} onInput={(e) => { setBitNumber(e.target.value) }} />
+                </div>
+                <div className="row--align-right">
+                    <button className="bit-number__operation" onClick={(e) => { inverse() }}>Inverse</button>
+                    <button className="bit-number__operation" onClick={(e) => { clear() }}>Clear</button>
+                    <button className="bit-number__operation" onClick={(e) => { shiftLeft() }}>&lt;&lt;</button>
+                    <button className="bit-number__operation" onClick={(e) => { shiftRight() }}>&gt;&gt;</button>
+                    <button className="bit-number__operation" onClick={(e) => { restore() }}>Restore</button>
+                </div>
 
             </div>
             <div>
