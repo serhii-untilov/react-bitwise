@@ -1,4 +1,14 @@
-export default function BitNotation() {
+import { useState } from "react"
+
+const Notation = {
+    Hex: 0,
+    Dec: 1,
+    Oct: 2
+  }
+  
+function BitNotation(props) {
+    const [operation, setOperation] = useState(props.operation)
+    
     return (
         <div>
             <div class="row">
@@ -9,3 +19,5 @@ export default function BitNotation() {
         </div>
     )
 }
+
+export { Notation, BitNotation }
