@@ -1,25 +1,25 @@
-import BitButton from "./BitButton.component"
+import BitButton from "./Bit"
 
-function BitNumber(props) {
+function Number(props) {
     return (
         <div className="column">
             <div className="row">
-                
-                <div className="row--align-left">
-                    <button className="bit-number__operation" onClick={(e) => { props.onChange(~props.number) }}>Inverse</button>
-                    <button className="bit-number__operation" onClick={(e) => { props.onChange(0) }}>Clear</button>
-                    <button className="bit-number__operation" onClick={(e) => { props.onChange(props.number << 1) }}>&lt;&lt;</button>
-                    <button className="bit-number__operation" onClick={(e) => { props.onChange(props.number >> 1) }}>&gt;&gt;</button>
+            <div className="row left">
+                    <label className="number__label">{props.caption}</label>
+                    <input className="number__input" type="text" value={props.number} onInput={(e) => { props.onChange(e.target.value) }} />
                 </div>
-                <div className="row--align-right">
-                    <div className="bit-number__caption">{props.caption}</div>
-                    <input className="bit-number__input" type="text" value={props.number} onInput={(e) => { props.onChange(e.target.value) }} />
 
+                <div className="row right">
+                    <button className="number__operation" onClick={(e) => { props.onChange(~props.number) }}>Inverse</button>
+                    <button className="number__operation" onClick={(e) => { props.onChange(0) }}>Clear</button>
+                    <button className="number__operation" onClick={(e) => { props.onChange(props.number << 1) }}>&lt;&lt;</button>
+                    <button className="number__operation" onClick={(e) => { props.onChange(props.number >> 1) }}>&gt;&gt;</button>
                 </div>
+                
 
             </div>
-            <div>
-                <tr>
+            <div className="column">
+                <tr className="row">
                     <td><BitButton name="31" state={getBit(props.number, 31)} onClick={(e) => { props.onChange(swapBit(props.number, 31)) }} /></td>
                     <td><BitButton name="30" state={getBit(props.number, 30)} onClick={(e) => { props.onChange(swapBit(props.number, 30)) }} /></td>
                     <td><BitButton name="29" state={getBit(props.number, 29)} onClick={(e) => { props.onChange(swapBit(props.number, 29)) }} /></td>
@@ -80,4 +80,4 @@ function swapBit(number, bit) {
     return setBit(number, bit, !getBit(number, bit))
 }
 
-export { BitNumber, setBit, getBit, swapBit }
+export { Number, setBit, getBit, swapBit }
