@@ -41,39 +41,49 @@ body {
 }
 
 .number__input {
-  
-  text-align: center;
+  text-align: right;
   border-radius: 4px;
-  border-color: #5DADE2;
+  border-color: #1B4F72;
   border-style: solid;
-  color:  #1B4F72; 
-  background-color: #F2F4F4;
+  color: #5DADE2;
+  background-color: #282c34;
   height: 20px;
 }
 
+.number__input:focus {
+  outline: none !important;
+  border-color: #5DADE2;
+}
+
 .number__operation {
+  margin-left: 4px;
   text-align: center;
   border-radius: 4px;
-  border-color: #5DADE2;
+  border-color: #1B4F72;
   border-style: solid;
-  color: #F2F4F4; 
-  background-color: #1B4F72;
-  width: 80px;
+  color: #5DADE2;
+  background-color: #282c34;
+  width: 26px;
   height: 26px;
 }
 
+.number__operation:hover {
+  border-color: #5DADE2;
+}
+
 .operation {
-  margin: 16px 0px 16px 0px;
+  margin-top: 36px;
   text-align: center;
   color: #5DADE2;
-  width: 80px;
+  background-color: #282c34;
+  width: 64px;
 }
 
 .notation {
-  margin: 16px 0px 16px 0px;
+  margin-top: 36px;
   text-align: center;
   color: #5DADE2;
-  width: 80px;
+  width: 64px;
 }
 
 .number__bits {
@@ -100,8 +110,16 @@ body {
 }
 
 .bit-off {
-  color: #F2F4F4;
+  color: #5DADE2;
   background-color: #282c34;
+}
+
+.bit-off:hover {
+  border-color: #5DADE2;
+}
+
+.bit-on:hover {
+  border-color: #5DADE2;
 }
 
 .bit-space {

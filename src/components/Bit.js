@@ -1,4 +1,4 @@
-function BitButton(props) {
+function Bit(props) {
     return <button
         class={props.state ? 'bit-button bit-on' : 'bit-button bit-off'}
         onClick={props.onClick}>
@@ -6,4 +6,4 @@ function BitButton(props) {
     </button>
 }
 
-export default BitButton
+export default Bit
