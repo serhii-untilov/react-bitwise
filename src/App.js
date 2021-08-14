@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-import { Number } from './components/Number'
+import Number from './components/Number'
 import { Operation, OperationEnum, calculate } from './components/Operation';
 import { Notation, NotationEnum } from './components/Notation';
 
