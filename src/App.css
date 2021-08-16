@@ -18,6 +18,16 @@ input::selection {
   background: #117A65;
 }
 
+a {
+  color: #5DADE2;
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -41,17 +51,20 @@ input::selection {
 }
 
 .number__label {
-  width: 72px;
+  width: 110px;
 }
 
 .number__input {
+  
+  font-size: 18px;
   text-align: right;
   border-radius: 4px;
   border-color: #1B4F72;
   border-style: solid;
   color: #5DADE2;
   background-color: #282c34;
-  height: 20px;
+  height: 24px;
+  width: 148px;
 }
 
 .number__input:focus {

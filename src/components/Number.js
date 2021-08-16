@@ -6,13 +6,13 @@ function Number(props) {
         <div className="column">
             <div className="row">
                 <div className="row">
-                    <label className="number__label">{props.caption}</label>
-                    <input className="number__input"
+                    <label className="number__label"><h2>{props.caption}</h2></label>
+                    <h2><input className="number__input"
                         type="text"
                         value={ toString((props.number) >>> 0, props.notation) }
                         onInput={ (e) => props.onChange(toNumber(e.target.value, props.notation)) }
                         onFocus={ (e) => e.target.select() }
-                    />
+                    /></h2>
                 </div>
                 <div className="row">
                     <button className="number__operation" onClick={(e) => { props.onChange(props.number - 1) }}>-</button>
