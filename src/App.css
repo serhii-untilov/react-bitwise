@@ -13,6 +13,11 @@ body {
   justify-content: center;
 }
 
+input::selection {
+  color: white;
+  background: #117A65;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -28,7 +33,6 @@ body {
 
 .right {
   margin-right: 0px;
-  
   justify-content: end;
 }
 

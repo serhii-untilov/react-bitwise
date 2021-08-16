@@ -28,11 +28,11 @@ function App() {
 
    return (
     <div className="App">
-       <Number caption="Number 1" number={number1} onChange={onChangeNumber1} />
+       <Number caption="Number 1" number={number1} notation={notation} onChange={onChangeNumber1} />
        <Operation operation={operation} onChange={onChangeOperation} />
-       <Number caption="Number 2" number={number2} onChange={onChangeNumber2} />
+       <Number caption="Number 2" number={number2} notation={notation} onChange={onChangeNumber2} />
        <Notation notation={notation} onChange={setNotation} />
-       <Number caption="Result" number={result} onChange={setResult}/>
+       <Number caption="Result" number={result} notation={notation} onChange={setResult}/>
     </div>
   )
 }
