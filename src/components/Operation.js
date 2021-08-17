@@ -21,6 +21,7 @@ function Operation(props) {
               <div class="operation">
                 <input type="radio" checked={props.operation === OperationEnum.XOR} onClick={(e) => { props.onChange(OperationEnum.XOR) }} /><label>XOR</label>
               </div>
+              <button className="operation__button" onClick={(e) => { props.swap() }}>Swap</button>
             </div>
         </div>
     )
