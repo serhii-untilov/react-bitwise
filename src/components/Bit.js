@@ -1,6 +1,6 @@
 function Bit(props) {
     return <button
-        class={getBit(props.number, Number(props.name)) ? 'bit-button bit-on' : 'bit-button bit-off'}
+        className={getBit(props.number, Number(props.name)) ? 'bit-button bit-on' : 'bit-button bit-off'}
         onClick={(e) => { props.onChange(swapBit(props.number, Number(props.name))) }}>
         {props.name}
     </button>
