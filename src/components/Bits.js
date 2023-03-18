@@ -6,6 +6,7 @@ function Bits(props) {
         bits.push(
             <td>
                 <Bit
+                    key={n.toString()}
                     name={n}
                     number={props.number}
                     onChange={props.onChange}
