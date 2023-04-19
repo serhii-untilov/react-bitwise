@@ -6,7 +6,7 @@ function Bits(props) {
         bits.push(
             <td>
                 <Bit
-                    key={n.toString()}
+                    key={n}
                     name={n}
                     number={props.number}
                     onChange={props.onChange}
@@ -14,7 +14,7 @@ function Bits(props) {
             </td>
         )
         if (n && n % 4 === 0) {
-            bits.push(<td class="bit-space"></td>)
+            bits.push(<td key={n} className="bit-space"></td>)
         }
     }
     return bits
