@@ -10,16 +10,16 @@ function Operation(props) {
         <div>
             <div className="row center">
               <div className="operation">
-                <input type="radio" checked={props.operation === OperationEnum.AND} onClick={(e) => { props.onChange(OperationEnum.AND) }} /><label>AND</label>
+                <input type="radio" readOnly checked={props.operation === OperationEnum.AND} onClick={(e) => { props.onChange(OperationEnum.AND) }} /><label>AND</label>
               </div>
               <div className="operation">
-                <input type="radio" checked={props.operation === OperationEnum.OR} onClick={(e) => { props.onChange(OperationEnum.OR) }} /><label>OR</label>
+                <input type="radio" readOnly checked={props.operation === OperationEnum.OR} onClick={(e) => { props.onChange(OperationEnum.OR) }} /><label>OR</label>
               </div>
               <div className="operation">
-                <input type="radio" checked={props.operation === OperationEnum.XOR} onClick={(e) => { props.onChange(OperationEnum.XOR) }} /><label>XOR</label>
+                <input type="radio" readOnly checked={props.operation === OperationEnum.XOR} onClick={(e) => { props.onChange(OperationEnum.XOR) }} /><label>XOR</label>
               </div>
               <div className="operation">
-                <input type="radio" checked={props.operation === OperationEnum.NOT} onClick={(e) => { props.onChange(OperationEnum.NOT) }} /><label>NOT</label>
+                <input type="radio" readOnly checked={props.operation === OperationEnum.NOT} onClick={(e) => { props.onChange(OperationEnum.NOT) }} /><label>NOT</label>
               </div>
               <button className="operation__button" onClick={(e) => { props.swap() }}>Swap</button>
             </div>

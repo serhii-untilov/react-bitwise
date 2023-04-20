@@ -9,13 +9,13 @@ function Notation (props) {
         <div>
             <div className="row center">
                 <div className="notation">
-                    <input type="radio" checked={props.notation === NotationEnum.Oct} onClick={(e) => { props.onChange(NotationEnum.Oct) }} /><label>OCT</label>
+                    <input type="radio" readOnly checked={props.notation === NotationEnum.Oct} onClick={(e) => { props.onChange(NotationEnum.Oct) }} /><label>OCT</label>
                 </div>
                 <div className="notation">
-                    <input type="radio" checked={props.notation === NotationEnum.Dec} onClick={(e) => { props.onChange(NotationEnum.Dec) }}/><label>DEC</label>
+                    <input type="radio" readOnly checked={props.notation === NotationEnum.Dec} onClick={(e) => { props.onChange(NotationEnum.Dec) }}/><label>DEC</label>
                 </div>
                 <div className="notation">
-                    <input type="radio" checked={props.notation === NotationEnum.Hex} onClick={(e) => { props.onChange(NotationEnum.Hex) }}/><label>HEX</label>
+                    <input type="radio" readOnly checked={props.notation === NotationEnum.Hex} onClick={(e) => { props.onChange(NotationEnum.Hex) }}/><label>HEX</label>
                 </div>
             </div>
         </div>
