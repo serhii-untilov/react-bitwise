@@ -35,7 +35,7 @@ function App() {
 
    return (
      <div className="App">
-       <div className="row center"><h1><a href="https://github.com/sergey-untilov/react-bitwise" target="_blank">Bitwise calculator</a></h1></div>
+       <div className="row center"><h1><a href="https://github.com/sergey-untilov/react-bitwise" target="_blank" rel="noreferrer">Bitwise calculator</a></h1></div>
        <Number caption="Number 1" number={number1} notation={notation} onChange={onChangeNumber1} />
        <Operation operation={operation} onChange={onChangeOperation} swap={Swap}/>
        <Number caption="Number 2" number={number2} notation={notation} onChange={onChangeNumber2} />

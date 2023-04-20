@@ -24,9 +24,9 @@ function Number(props) {
                 </div>
             </div>
             <div className="column">
-                <tr className="row">
+                <div className="row">
                     <Bits number={props.number} onChange={props.onChange}/>
-                </tr>
+                </div>
             </div>
         </div>
     )

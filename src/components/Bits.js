@@ -2,20 +2,24 @@ import { Bit } from "./Bit"
 
 function Bits(props) {
     const bits = []
+    let key = 0
     for (let n = 31; n >= 0; n--) {
         bits.push(
-            <td>
+            // <div>
                 <Bit
-                    key={n}
+                    key={key}
                     name={n}
                     number={props.number}
                     onChange={props.onChange}
                 />
-            </td>
+            // </div>
         )
+        key++
         if (n && n % 4 === 0) {
-            bits.push(<td key={n} className="bit-space"></td>)
+            bits.push(<div key={key} className="bit-space"></div>)
+            key++
         }
+
     }
     return bits
 }
