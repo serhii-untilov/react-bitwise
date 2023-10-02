@@ -1,6 +1,8 @@
 #!/bin/sh
+appName="bitwise"
 userName="pi"
-hostName="st"
-rsync -avzP --rsh=ssh ./build/* $userName@$hostName:/home/$userName/react-bitwise/
-rsync -avzP --rsh=ssh ./install.sh $userName@$hostName:/home/$userName/react-bitwise/
-rsync -avzP --rsh=ssh ./apache.conf $userName@$hostName:/home/$userName/react-bitwise/
+hostName="nas"
+rsync -avzP --rsh=ssh ./build/* $userName@$hostName:/home/$userName/$appName/
+rsync -avzP --rsh=ssh ./install.sh $userName@$hostName:/home/$userName/$appName/
+rsync -avzP --rsh=ssh ./apache.conf $userName@$hostName:/home/$userName/$appName/
+rsync -avzP --rsh=ssh ./nginx.conf $userName@$hostName:/home/$userName/$appName/

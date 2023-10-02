@@ -1,4 +1,5 @@
 #!/bin/sh
+# Usage: sudo ./apache-install.sh
 
 # sudo apt update && sudo apt upgrade
 # sudo apt install apache2 -y
