@@ -9,23 +9,23 @@ pipeline {
     stages {
         stage('Dependencies') {
             steps {
-                sh 'npm install'
+                sh './scripts/dependencies.sh'
             }
         }
         stage('Unit testing') {
             steps {
-                sh 'npm test'
+                sh './scripts/test.sh'
             }
         }
         stage('Build') {
             steps {
-                sh 'npm run build'
+                sh './scripts/build.sh'
             }
         }
-    //    stage('Deploy') {
-    //         steps {
-    //             sh './deploy.sh'
-    //         }
-    //     }
+        stage('Deploy') {
+             steps {
+                 sh './scripts/deploy.sh'
+             }
+         }
      }
 }
