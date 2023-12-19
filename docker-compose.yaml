@@ -1,7 +1,9 @@
 services:
   nginx:
     image: nginx
-    ports: 
+    ports:
       - 8080:80
     volumes:
       - ./build:/usr/share/nginx/html
+      - ${HOST_DOCKER}:/var/run/docker.sock
+      - ${HOST_JENKINS_DATA}:/var/jenkins_home
