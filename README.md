@@ -8,6 +8,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 https://www.jenkins.io/doc/tutorials/build-a-node-js-and-react-app-with-npm/
 
+``` bash
+sudo apt install wget
+wget https://raw.githubusercontent.com/serhii-untilov/react-bitwise/master/Dockerfile
+wget https://raw.githubusercontent.com/serhii-untilov/react-bitwise/master/scripts/docker-jenkins.sh
+chmod +x ./docker-jenkins.sh
+./docker-jenkins.sh
+```
+
+
 | Command                        | Description                                       |
 | ------------------------------ | ------------------------------------------------- |
 | ./scripts/docker-jenkins.sh    | Run Jenkins in Docker                             |

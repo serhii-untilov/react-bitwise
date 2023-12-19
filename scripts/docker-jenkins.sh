@@ -1,7 +1,7 @@
 docker network create jenkins
 
 docker stop jenkins-docker
-sleep 1s
+sleep 2s
 docker run --name jenkins-docker --rm --detach \
   --privileged \
   --network jenkins --network-alias docker \
@@ -15,7 +15,7 @@ docker run --name jenkins-docker --rm --detach \
   --storage-driver overlay2
 
 docker stop jenkins-blueocean
-sleep 1s
+sleep 2s
 docker build -t myjenkins-blueocean:2.426.2-1 .
 docker run --name jenkins-blueocean --rm --detach \
   --privileged \
