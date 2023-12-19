@@ -1,5 +1,8 @@
 #/bin/bash
 NODE_MAJOR=18
+apt install sudo
+usermod -aG sudo "$(whoami)"
+usermod -aG wheel "$(whoami)"
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install -y ca-certificates curl gnupg
