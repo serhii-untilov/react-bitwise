@@ -4,6 +4,13 @@ Try [Bitwise calculator](http://bitwise.sergey-untilov.com).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to install
+
+``` bash
+wget https://raw.githubusercontent.com/serhii-untilov/react-bitwise/master/install.sh
+sh ./install.sh
+```
+
 ## Jenkins in Docker
 
 https://www.jenkins.io/doc/tutorials/build-a-node-js-and-react-app-with-npm/
@@ -15,7 +22,6 @@ wget https://raw.githubusercontent.com/serhii-untilov/react-bitwise/master/scrip
 chmod +x ./docker-jenkins.sh
 ./docker-jenkins.sh
 ```
-
 
 | Command                        | Description                                       |
 | ------------------------------ | ------------------------------------------------- |
