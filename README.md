@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ``` bash
 cd ~
-git clone https://github.com/serhii-untilov/react-bitwise.git bitwise
+git clone https://github.com/serhii-untilov/react-bitwise.git
 cd react-bitwise
 sh ./scripts/docker-install.sh
 ```
