@@ -4,6 +4,6 @@ import App from './App';
 
 test(`renders application's name`, () => {
   render(<App />);
-  const linkElement = screen.getByText(/Bitwise calculator/i);
+  const linkElement = screen.getByText(/Bitwise operator/i);
   expect(linkElement).toBeInTheDocument();
 });

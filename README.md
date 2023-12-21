@@ -1,26 +1,39 @@
-# Bitwise calculator
+# Bitwise operator
 
-Try [Bitwise calculator](http://bitwise.sergey-untilov.com).
+Try [Bitwise operator](http://bitwise.untilov.com.ua).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## How to install
+## How to install the application
+
+### In a Docker container
 
 ``` bash
-wget https://raw.githubusercontent.com/serhii-untilov/react-bitwise/master/install.sh
+cd ~
+git clone https://github.com/serhii-untilov/react-bitwise.git bitwise
+cd react-bitwise
+sh ./scripts/docker-install.sh
+```
+
+The application will be available at http://localhost:8080
+
+### In Jenkins by a Docker container
+
+``` bash
+wget https://raw.githubusercontent.com/serhii-untilov/react-bitwise/master/jenkins/install.sh
 sh ./install.sh
 ```
 
-## Jenkins in Docker
+## Additional information
+
+### Jenkins in a Docker container
 
 https://www.jenkins.io/doc/tutorials/build-a-node-js-and-react-app-with-npm/
 
 ``` bash
-sudo apt install wget
-wget https://raw.githubusercontent.com/serhii-untilov/react-bitwise/master/Dockerfile
-wget https://raw.githubusercontent.com/serhii-untilov/react-bitwise/master/scripts/docker-jenkins.sh
-chmod +x ./docker-jenkins.sh
-./docker-jenkins.sh
+wget https://raw.githubusercontent.com/serhii-untilov/react-bitwise/master/jenkins/Dockerfile
+wget https://raw.githubusercontent.com/serhii-untilov/react-bitwise/master/jenkins/docker-jenkins.sh
+sh ./docker-jenkins.sh
 ```
 
 | Command                        | Description                                       |
