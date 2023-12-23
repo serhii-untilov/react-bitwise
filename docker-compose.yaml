@@ -1,7 +1,6 @@
 services:
-  nginx:
-    image: nginx
+  bitwise:
+    container_name: bitwise
+    build: .
     ports:
-      - 8080:80
-    volumes:
-      - ./build:/usr/share/nginx/html
+      - 3000:3000
