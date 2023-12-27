@@ -4,18 +4,16 @@ Try [Bitwise operator](http://bitwise.untilov.com.ua).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## How to install the application
+## How to run the application
 
 ### In a Docker container
 
 ``` bash
-cd ~
-git clone https://github.com/serhii-untilov/react-bitwise.git
-cd ./react-bitwise
-sh ./scripts/docker-install.sh
+sh ./container.sh
+sensible-browser http://localhost:3000/
 ```
 
-The application will be available at http://localhost:8080
+The application will be available at [localhost:3000](http://localhost:3000/)
 
 ### In Jenkins by a Docker container
 

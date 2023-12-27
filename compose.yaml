@@ -1,0 +1,14 @@
+services:
+  bitwise:
+    container_name: bitwise
+    build: .
+    ports:
+      - 3000:3000
+  nginx:
+    container_name: nginx
+    build:
+      no_cache: true
+      context: nginx
+    ports:
+      - "80:80"
+      - "443:443"
