@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### In a Docker container
 
 ``` bash
-sh ./start.sh
+./start
 ```
 
 The application will be available at [localhost:3000](http://localhost:3000/)
