@@ -1,7 +1,9 @@
 services:
   bitwise:
     container_name: bitwise
-    build: .
+    build:
+      no_cache: true
+      context: .
     ports:
       - 3000:3000
   nginx:
@@ -10,5 +12,5 @@ services:
       no_cache: true
       context: nginx
     ports:
-      - "8080:8080"
+      - "8080:80"
 

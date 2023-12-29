@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### In a Docker container
 
 ``` bash
-sh ./container.sh
+sh ./start.sh
 sensible-browser http://localhost:3000/
 ```
 
