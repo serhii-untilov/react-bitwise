@@ -1,6 +1,6 @@
 # Bitwise operator
 
-Try [Bitwise operator](http://bitwise.untilov.com.ua).
+Try [Bitwise operator](https://bitwise.untilov.com.ua/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -10,7 +10,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ``` bash
 sh ./start.sh
-sensible-browser http://localhost:3000/
 ```
 
 The application will be available at [localhost:3000](http://localhost:3000/)
@@ -19,7 +18,10 @@ The application will be available at [localhost:3000](http://localhost:3000/)
 
 Configure [https](https://phoenixnap.com/kb/letsencrypt-docker).
 
-https://phoenixnap.com/kb/letsencrypt-docker
+Renew Certificate once a year
+``` bash
+sh ./scripts/renew-certificate.sh
+```
 
 ### In Jenkins by a Docker container
 
