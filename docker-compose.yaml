@@ -6,7 +6,7 @@ services:
     image: untilov/bitwise
     ports:
       - 3000:3000
-    restart: always
+    # restart: always
   nginx:
     container_name: nginx
     build:
@@ -15,4 +15,4 @@ services:
     ports:
       - "8080:80"
       - "4430:443"
-    restart: always
+    # restart: always
