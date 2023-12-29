@@ -2,15 +2,16 @@ services:
   bitwise:
     container_name: bitwise
     build:
-      no_cache: true
       context: .
+    image: untilov/bitwise
     ports:
       - 3000:3000
+    restart: always
   nginx:
     container_name: nginx
     build:
-      no_cache: true
       context: nginx
+    image: untilov/nginx
     ports:
       - "8080:80"
-
+    restart: always
